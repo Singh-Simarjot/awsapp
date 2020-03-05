@@ -1,0 +1,11 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
+.videoBlock {
+  iframe,
+  video {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    min-height: 400px;
+  }
+}

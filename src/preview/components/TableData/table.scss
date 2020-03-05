@@ -1,0 +1,26 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/variables";
+
+.table-data{
+    p{
+        font-size: 16px;
+        @include sm{
+            width:75%;
+        }
+
+        @include lg{
+            width:66.6%;
+        }
+    }
+
+    table{
+        font-size:14px;
+        background:#f4f4f4;
+        thead{
+            background: #fff;
+            th{
+                border-bottom:0;
+            }
+        }
+    }
+}

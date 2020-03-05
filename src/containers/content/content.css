@@ -1,0 +1,291 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+/*
+@include lg {
+  max-width: 1100px;
+}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include sm-max {}
+@include sm-min {}
+*/
+.content {
+  padding: 15px;
+  overflow: auto;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 100%;
+  }
+}
+
+.content .contentTop h2 {
+  margin: 0;
+}
+
+.content .contentData .media {
+  position: relative;
+}
+
+.content .contentData .media .mediaIcon {
+  font-size: 20px;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.content .contentData .media .media-body h4 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.content .contentData .media .media-body p {
+  font-size: 14px;
+}
+
+.content .contentData .media .media-body p:last-child {
+  margin-bottom: 0;
+}
+
+.content .contentData .media .moveIcon {
+  font-size: 24px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+}
+
+.content .contentData .media .contentItemAction {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+}
+
+.content .contentData .media:hover .contentItemAction {
+  display: block;
+}
+
+.content .contentData.contentDataNavigation {
+  height: calc(100vh - 410px);
+  overflow: auto;
+}
+
+@media (min-width: 1200px) {
+  .content .contentData.contentDataNavigation {
+    height: calc(100vh - 350px);
+  }
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel {
+  width: 100%;
+  position: relative;
+  padding-right: 5px;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowTitle {
+  line-height: 1.1em;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .editNavBtn {
+  cursor: pointer;
+  position: absolute;
+  top: -11px;
+  right: 0;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .deleteNavBtn {
+  margin-left: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: -11px;
+  right: 0;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .editDrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -25px;
+  bottom: 0;
+  padding-right: 80px;
+  display: none;
+  background-color: #fff;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .editDrop.editDropOpen {
+  display: block;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .editDrop button {
+  position: absolute;
+  top: 3px;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .editDrop .editDropSave {
+  right: 35px;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .editDrop .editDropCancel {
+  right: 0;
+}
+
+.content .contentData.contentDataNavigation .rst__rowContents .rst__rowLabel .rst__rowSubtitle .editDrop .form-control {
+  outline: 0;
+  margin-top: 3px;
+}
+
+.contentDataUl {
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.contentDataUl li {
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style: none;
+}
+
+.contentDataUl li span {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  padding: 10px 40px 10px 15px;
+  position: relative;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: move;
+  max-width: 600px;
+  font-size: 14px;
+}
+
+.contentDataUl li span .moveIcons {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.5);
+  font-style: normal;
+  height: 32px;
+  font-size: 14px;
+}
+
+.contentDataUl li span .moveIcons:before, .contentDataUl li span .moveIcons:after {
+  display: block;
+  font-family: FontAwesome;
+  height: 12px;
+}
+
+.contentDataUl li span .moveIcons:before {
+  content: "\f0d8";
+}
+
+.contentDataUl li span .moveIcons:after {
+  content: "\f0d7";
+}
+
+.contentDataUl li span .editBtn {
+  position: absolute;
+  right: 41px;
+  top: 5px;
+  display: none;
+}
+
+.contentDataUl li span .deleteBtn {
+  position: absolute;
+  right: 80px;
+  top: 5px;
+  display: none;
+}
+
+.contentDataUl li span .editNavFelid {
+  padding: 10px 75px 0 0;
+  position: relative;
+  display: none;
+}
+
+.contentDataUl li span .editNavFelid button {
+  position: absolute;
+  top: 10px;
+}
+
+.contentDataUl li span .editNavFelid .saveEdit {
+  right: 35px;
+}
+
+.contentDataUl li span .editNavFelid .cancelEdit {
+  right: 0;
+}
+
+.contentDataUl li span:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.contentDataUl li span:hover .editBtn,
+.contentDataUl li span:hover .deleteBtn {
+  display: block;
+}
+
+.contentDataUl li span.open {
+  padding-right: 15px;
+}
+
+.contentDataUl li span.open .moveIcons,
+.contentDataUl li span.open .deleteBtn,
+.contentDataUl li span.open .editBtn {
+  display: none;
+}
+
+.contentDataUl li span.open .editNavFelid {
+  display: block;
+}
+
+.contentDataUl li ul {
+  padding-left: 30px;
+}
+
+.addTabDara {
+  margin: 15px 0 0 0;
+}
+
+.addTabDara .contentDataNavigation {
+  width: 100%;
+}
+
+.addTabDara .contentDataNavigation.dropImg .rst__tree span {
+  border: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=content.css.map */

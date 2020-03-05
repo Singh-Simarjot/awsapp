@@ -1,0 +1,102 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/variables";
+
+.icon-grid{
+    h3{
+        font-size: 20px;
+        line-height: 26px;
+        margin-left: 16px;
+    }
+}
+
+.icon-list{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #e0e0e0;
+    margin-top:15px;
+    color:#161616;
+
+    @include sm{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    @include lg{
+        grid-template-columns:repeat(6,1fr);
+    }
+
+    .px-ratio{
+        padding-top:100%;
+        position: relative;
+        border-left: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
+
+        &:nth-child(2n+1) {
+            border-left: none;
+        }
+
+        &:nth-child(-n+2) {
+            border-top: none;
+        }
+
+
+        @include sm{
+            &:nth-child(4n+1) {
+                border-left: none;
+            }
+
+            &:nth-child(-n+4) {
+                border-top: none;
+            }
+
+            &:nth-child(-n+4) {
+                border-top: 1px solid #e0e0e0;
+            }
+
+            &:nth-child(2n+1) {
+                border-left: 1px solid 
+                #e0e0e0;
+            }
+        }
+
+        @include lg{
+            &:nth-child(6n+1) {
+                border-left: none;
+            }
+    
+            &:nth-child(-n+6) {
+                border-top: none;
+            }
+
+        }
+
+
+
+
+    }
+}
+
+.grid-block{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    padding:15px;
+    background: #fff;
+
+    .icon-name{
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        position: absolute;
+    }
+
+    .icon-preview{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        flex-grow:1;
+        font-size:32px;
+    }
+}

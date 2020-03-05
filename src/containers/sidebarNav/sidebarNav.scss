@@ -1,0 +1,67 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+.sidebarNav {
+  // height: 100%;
+  overflow: auto;
+  padding: 15px;
+  background-color: rgba($theme-bg, 0.96);
+  color: $theme-text;
+  @include sm-min {
+    width: 250px;
+  }
+  @include sm-max {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 10;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  &.sidebarNavOpen {
+    @include sm-max {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .sidebarNavList {
+    padding: 0;
+    margin: 0;
+    & > li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+      h4 {
+        font-size: $drfault-size + 2;
+        margin-bottom: 15px;
+        position: relative;
+        padding-right: 15px;
+        cursor: pointer;
+      }
+      ul {
+        padding: 0 0 0 15px;
+        margin: 0;
+        li {
+          padding: 0;
+          margin: 0 0 5px 0;
+          list-style: none;
+          a {
+            display: block;
+            color: $theme-text;
+            text-decoration: none;
+            font-size: $drfault-size - 2;
+            &.active {
+              color: $theme-active-link;
+            }
+          }
+        }
+      }
+    }
+  }
+}

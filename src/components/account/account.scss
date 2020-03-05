@@ -1,0 +1,36 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+.account {
+  background-color: rgba($theme-bg, 1);
+  //   height: 100vh;
+  height: 100%;
+  overflow: auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .accountInner {
+    width: 100%;
+    background-color: $theme-text;
+    max-width: 400px;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 4px;
+    h3 {
+      margin: 0 0 30px 0;
+      font-size: $drfault-size * 2;
+    }
+    p {
+      padding: 0;
+    }
+  }
+}

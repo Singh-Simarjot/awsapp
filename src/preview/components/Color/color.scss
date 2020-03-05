@@ -1,0 +1,38 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/variables";
+
+
+.color-pattern{
+    grid-template-columns: repeat(6,1fr);
+    display:grid;
+    margin:20px 0;
+
+    @include sm{
+        grid-template-columns: repeat(12,1fr);
+    }
+}
+
+.color-grid{
+    h2{
+        font-size: 28px;
+        margin-bottom:25px;
+    }
+
+    p{
+
+        @include sm{
+            width:75%;
+        }
+
+        @include lg{
+            width: 66.667%;
+        }
+    }
+}
+
+.color-grid-box::before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+}

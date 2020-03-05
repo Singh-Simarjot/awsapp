@@ -1,0 +1,112 @@
+@import "../assets/scss/variables";
+@import "../assets/scss/mixins";
+.componentsList {
+  padding: 15px;
+  overflow: auto;
+  background-color: rgba($theme-bg, 0.8);
+  color: $theme-text;
+  @include lg {
+    width: 450px;
+    height: 100%;
+  }
+  h2 {
+    // font-size: $drfault-size * 1.5;
+    margin: 0;
+  }
+  .componentsListBtn {
+    @include lg {
+      display: none;
+    }
+  }
+}
+.componentsListItms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  .componentItem {
+    background-color: $theme-bg;
+    padding: 15px 10px;
+    // text-align: center;
+    cursor: pointer;
+    width: -webkit-calc(50% - 7.5px);
+    width: calc(50% - 7.5px);
+    margin-top: 15px;
+    h5 {
+      margin: 0;
+      font-weight: normal;
+      font-size: $drfault-size - 2;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+  @include lg {
+    // max-height: 100vh;
+    max-height: unset;
+    overflow: auto;
+  }
+  &.componentsListItmsOpen {
+    // max-height: 100vh;
+    // max-height: 500px;
+    max-height: unset;
+    overflow: auto;
+  }
+}
+
+.navigationList {
+  width: 100%;
+  @include lg {
+    height: -webkit-calc(100vh - 285px);
+    height: calc(100vh - 285px);
+    overflow: auto;
+  }
+  ul {
+    padding: 0;
+    margin: 15px 0 0 0;
+    li {
+      padding: 8px 30px 8px 10px;
+      border: 1px solid rgba($theme-text, 0.2);
+      background-color: rgba($theme-text, 0.1);
+      margin: 10px 0 0 0;
+      list-style: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      cursor: pointer;
+      font-size: $drfault-size - 2;
+      position: relative;
+      i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      &:hover {
+        background-color: rgba($theme-text, 0.2);
+      }
+    }
+  }
+}
+.customLinkCreate {
+  padding-top: 10px;
+  width: 100%;
+  @include lg {
+    height: 175px;
+    overflow: auto;
+  }
+  .form-control {
+    background-color: $theme-text;
+  }
+  h2 {
+    margin: 0 0 10px 0;
+  }
+}

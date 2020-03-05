@@ -1,0 +1,135 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+/*
+@include lg {
+  max-width: 1100px;
+}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include sm-max {}
+@include sm-min {}
+*/
+.main {
+  height: calc(100vh - 51px);
+}
+
+.containerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.containerMain .containerMainContent {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  height: 100%;
+  overflow: auto;
+}
+
+@media (min-width: 1200px) {
+  .containerMain .containerMainContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.titelTop h2 {
+  margin-top: 0;
+}
+
+.modal .close {
+  outline: 0;
+}
+
+.form-group .form-control {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-radius: 0;
+}
+
+.form-group .form-control:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-group textarea.form-control {
+  resize: none;
+}
+
+.dropImg {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+.dropImg input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.dropImg span {
+  display: block;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 50px 10px;
+}
+
+.dropImg .dzu-dropzone .dzu-inputLabel {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.dropImg .dzu-dropzone .dzu-previewButton {
+  border: 0;
+}
+
+.dropImg .dzu-dropzone .dzu-inputLabelWithFiles {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.dropImg + .form-control {
+  margin-top: 10px;
+}
+
+.btn.disabled {
+  cursor: default;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+/*# sourceMappingURL=common.css.map */

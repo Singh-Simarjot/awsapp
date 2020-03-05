@@ -1,0 +1,202 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+/*
+@include lg {
+  max-width: 1100px;
+}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include sm-max {}
+@include sm-min {}
+*/
+.widgetsDiv .addIceon {
+  padding-right: 40px;
+  position: relative;
+}
+
+.widgetsDiv .addIceon button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.colorPalette .colorPaletteRow {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 0;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-right: 55px;
+}
+
+.colorPalette .colorPaletteRow > .row {
+  position: relative;
+}
+
+.colorPalette .colorPaletteRow > .row .addMoreColor {
+  display: inline-block;
+}
+
+.colorPalette .colorPaletteRow .colorBox {
+  position: relative;
+  padding-right: 75px;
+}
+
+.colorPalette .colorPaletteRow .colorBox button {
+  position: absolute;
+  top: 0;
+}
+
+.colorPalette .colorPaletteRow .colorBox button.btn-success {
+  right: 35px;
+}
+
+.colorPalette .colorPaletteRow .colorBox button.btn-danger {
+  right: 0;
+}
+
+.colorPalette .colorPaletteRow > button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.ecternalPageLinkGrid .ecternalPageRow {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+
+.ui.dropdown {
+  position: relative;
+  padding: 0 30px 12px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  margin-bottom: 15px;
+}
+
+.ui.dropdown .ui.label {
+  padding: 5px 25px 6px 6px;
+  background-color: #fff;
+  position: relative;
+  margin-left: 12px;
+  margin-top: 12px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.ui.dropdown .ui.label .delete.icon {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #f00;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ui.dropdown .ui.label .delete.icon:after {
+  content: "\f00d";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+  position: relative;
+  top: -5px;
+  font-style: normal;
+}
+
+.ui.dropdown .search {
+  outline: 0;
+  border: 0;
+  line-height: 1.5;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
+  background-color: transparent;
+  margin-left: 12px;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.ui.dropdown .sizer {
+  display: none;
+}
+
+.ui.dropdown .default.text {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  display: none;
+}
+
+.ui.dropdown .dropdown.icon {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.ui.dropdown .dropdown.icon:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.ui.dropdown.active .dropdown.icon {
+  top: 20px;
+}
+
+.ui.dropdown.active .dropdown.icon:after {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.ui.dropdown .menu.transition {
+  margin-top: 12px;
+  background-color: #f4f4f4;
+  max-height: 150px;
+  overflow: auto;
+  display: none;
+  margin-bottom: -12px;
+  margin-right: -30px;
+}
+
+.ui.dropdown .menu.transition .item {
+  padding: 5px 15px;
+  background-color: #f4f4f4;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.ui.dropdown .menu.transition .item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ui.dropdown .menu.transition.visible {
+  display: block;
+}
+/*# sourceMappingURL=widgets.css.map */

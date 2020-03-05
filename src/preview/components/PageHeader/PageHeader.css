@@ -1,0 +1,45 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+/*
+@include lg {
+  max-width: 1100px;
+}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include sm-max {}
+@include sm-min {}
+*/
+.pageHeaderComp {
+  background-color: black;
+  margin-top: 0 !important;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pageHeaderComp h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .pageHeaderComp h1 {
+    font-size: 64px;
+  }
+}
+/*# sourceMappingURL=PageHeader.css.map */

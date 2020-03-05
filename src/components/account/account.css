@@ -1,0 +1,62 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+/*
+@include lg {
+  max-width: 1100px;
+}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include sm-max {}
+@include sm-min {}
+*/
+.account {
+  background-color: black;
+  height: 100%;
+  overflow: auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.account .accountInner {
+  width: 100%;
+  background-color: #fff;
+  max-width: 400px;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 4px;
+}
+
+.account .accountInner h3 {
+  margin: 0 0 30px 0;
+  font-size: 32px;
+}
+
+.account .accountInner p {
+  padding: 0;
+}
+/*# sourceMappingURL=account.css.map */

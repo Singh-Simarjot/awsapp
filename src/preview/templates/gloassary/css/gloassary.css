@@ -1,0 +1,88 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+/*
+@include lg {
+  max-width: 1100px;
+}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include sm-max {}
+@include sm-min {}
+*/
+.block-text {
+  margin: 0px 0px 42px 0px;
+  padding: 0px 70px 0px 0px;
+}
+
+.block-text h2 {
+  font-weight: 900;
+  margin: 0px 0px 18px 0px;
+  font-size: 34px;
+}
+
+.block-text h6 {
+  font-weight: 800;
+  margin: 0px 0px 6px 0px;
+}
+
+.block-text p {
+  margin: 0px 0px 26px 0px;
+}
+
+.block-text p a {
+  color: #3b99fd;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .block-text {
+    padding: 0;
+  }
+}
+
+.slide-right-nav {
+  position: absolute;
+  right: 15px;
+  top: 10%;
+  z-index: 9;
+}
+
+.slide-right-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide-right-nav li {
+  margin: 0px 0px 5px 0px;
+}
+
+.slide-right-nav li a {
+  display: inline-block;
+  color: #949494;
+  text-decoration: none;
+  padding: 0px 4px 0px 4px;
+}
+
+.slide-right-nav li a:hover {
+  background: #f2f2f2;
+}
+
+.slide-right-nav li.active a {
+  background: #f2f2f2;
+}
+/*# sourceMappingURL=gloassary.css.map */

@@ -1,0 +1,30 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+.headerMain {
+  background-color: rgba($theme-bg, 0.9);
+  color: $theme-text;
+  .headerLogo {
+    padding: 15px 0;
+    color: $theme-text;
+    text-decoration: none;
+    font-size: $drfault-size - 2;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .headerRight {
+    button {
+      svg {
+        fill: $theme-text;
+      }
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  .menuBtn {
+    margin-right: 10px;
+    @include lg {
+      display: none;
+    }
+  }
+}

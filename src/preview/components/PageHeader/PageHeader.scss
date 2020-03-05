@@ -1,0 +1,17 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
+.pageHeaderComp {
+  background-color: rgba($theme-bg, 1);
+  margin-top: 0 !important;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba($theme-text, 0.2);
+  h1 {
+    font-size: $drfault-size * 3;
+    margin: 0;
+    font-weight: normal;
+    @include sm-min {
+      font-size: $drfault-size * 4;
+    }
+  }
+}

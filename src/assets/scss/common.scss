@@ -1,0 +1,105 @@
+@import "./variables";
+@import "./mixins";
+.main {
+  height: -webkit-calc(100vh - 51px);
+  height: calc(100vh - 51px);
+}
+.containerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  .containerMainContent {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: auto;
+    height: 100%;
+    overflow: auto;
+    @include lg {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+h2 {
+  font-size: $drfault-size * 1.5;
+}
+.titelTop {
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.modal {
+  .close {
+    outline: 0;
+  }
+}
+
+.form-group {
+  .form-control {
+    background-color: rgba($theme-bg, 0.1);
+    border: 0;
+    border-radius: 0;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  textarea.form-control {
+    resize: none;
+  }
+}
+.dropImg {
+  background-color: rgba($theme-bg, 0.1);
+  padding: 15px;
+  display: block;
+  position: relative;
+  margin: 0;
+  input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  span {
+    display: block;
+    text-align: center;
+    color: rgba($theme-bg, 0.5);
+    border: 1px solid rgba($theme-bg, 0.2);
+    padding: 50px 10px;
+  }
+  .dzu-dropzone {
+    .dzu-inputLabel {
+      color: rgba($theme-bg, 0.5);
+      font-size: $drfault-size - 2;
+      font-weight: normal;
+    }
+    .dzu-previewButton {
+      border: 0;
+    }
+    .dzu-inputLabelWithFiles {
+      color: rgba($theme-bg, 0.5);
+    }
+  }
+}
+.dropImg + .form-control {
+  margin-top: 10px;
+}
+
+.btn.disabled{
+  cursor:default;
+} 
+
+.btn:disabled{
+  cursor:default;
+}

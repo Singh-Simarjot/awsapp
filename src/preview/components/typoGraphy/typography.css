@@ -1,0 +1,318 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+/*
+@include lg {
+  max-width: 1100px;
+}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include sm-max {}
+@include sm-min {}
+*/
+.card-box-feature {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-box-feature a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  text-decoration: none;
+}
+
+.card-box-feature .card {
+  min-height: 210px;
+  border-style: none solid solid none;
+  border-radius: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.card-box-feature .card:nth-child(2n+2) {
+  border-right: none;
+}
+
+.card-box-feature .card .card-body {
+  position: relative;
+}
+
+.card-box-feature .card .card-body .github {
+  left: 16px;
+  bottom: 16px;
+  color: #000;
+}
+
+.card-box-feature .card .card-body .externallink {
+  right: 16px;
+  bottom: 16px;
+  color: #000;
+}
+
+.card-box-feature .card:hover {
+  background: #f4f4f4;
+}
+
+.f-typography .semi-bold {
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+.f-typography .normal {
+  font-weight: 400;
+  font-size: 2.6rem;
+}
+
+.f-typography .light {
+  font-weight: 300;
+  font-size: 2.6rem;
+}
+
+.codeSnippets {
+  position: relative;
+}
+
+.codeSnippets i {
+  position: absolute;
+  top: 9px;
+  color: #fff;
+  z-index: 9;
+  right: 10px;
+}
+
+.codeSnippets > div pre {
+  padding: 1rem !important;
+}
+
+.scaling-property ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scaling-property ul li {
+  padding: 10px 0px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scaling-property ul li.info-heading span {
+  color: #a8a8a8;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: .32px;
+}
+
+.scaling-property ul li.info-heading span:nth-child(1) {
+  min-width: 100px;
+}
+
+.scaling-property ul li span:nth-child(1) {
+  font-size: .75rem;
+  min-width: 100px;
+  color: #161616;
+}
+
+.scaling-property ul li:nth-child(2) span:nth-child(2) {
+  font-size: .75rem;
+}
+
+.scaling-property ul li:nth-child(3) span:nth-child(2) {
+  font-size: .875rem;
+}
+
+.scaling-property ul li:nth-child(4) span:nth-child(2) {
+  font-size: 1rem;
+}
+
+.scaling-property ul li:nth-child(5) span:nth-child(2) {
+  font-size: 1.125rem;
+}
+
+.scaling-property ul li:nth-child(6) span:nth-child(2) {
+  font-size: 1.25rem;
+}
+
+.scaling-property ul li:nth-child(7) span:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.scaling-property ul li:nth-child(8) span:nth-child(2) {
+  font-size: 1.75rem;
+}
+
+.scaling-property ul li:nth-child(9) span:nth-child(2) {
+  font-size: 2.25rem;
+}
+
+.scaling-property ul li:nth-child(10) span:nth-child(2) {
+  font-size: 2.50rem;
+}
+
+.scaling-property ul li:nth-child(11) span:nth-child(2) {
+  font-size: 2.625rem;
+}
+
+.scaling-property ul li:nth-child(12) span:nth-child(2) {
+  font-size: 3rem;
+}
+
+.scaling-property ul li:nth-child(13) span:nth-child(2) {
+  font-size: 3.375rem;
+}
+
+.scaling-property ul li:nth-child(14) span:nth-child(2) {
+  font-size: 4.25rem;
+}
+
+.scaling-property ul li:nth-child(15) span:nth-child(2) {
+  font-size: 4.75rem;
+}
+
+.scaling-property ul li:nth-child(16) span:nth-child(2) {
+  font-size: 5.25rem;
+}
+
+.scaling-property ul li:nth-child(17) span:nth-child(2) {
+  font-size: 5.75rem;
+}
+
+.color-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.color-section ul div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 26px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 34px;
+  line-height: 32px;
+  color: #444;
+}
+
+.color-section ul div p {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  padding: 5px 0px 5px 0px;
+}
+
+.color-section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  min-height: 234px;
+}
+
+.color-section ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+.color-section ul li i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 26px;
+}
+
+.color-section ul li i.arrow {
+  color: blue !important;
+  position: relative;
+  top: 0 !important;
+}
+
+.color-section ul li i.download {
+  color: inherit !important;
+  position: relative;
+  top: 0 !important;
+}
+
+.color-section ul li.bdr-green {
+  border-top: 3px solid #25a70e;
+}
+
+.color-section ul li.bdr-green i {
+  color: #25a70e;
+}
+
+.color-section ul li.bdr-pink {
+  border-top: 3px solid #e41919;
+}
+
+.color-section ul li.bdr-pink i {
+  color: #e41919;
+}
+
+.color-section ul li.bg-dark-custom {
+  background: #333;
+  color: #fff;
+}
+
+.color-section ul li.bg-dark-custom-text {
+  background: #333;
+  color: #ff00b1;
+}
+/*# sourceMappingURL=typography.css.map */

@@ -1,0 +1,143 @@
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
+.codeSnippets > div {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.codeSnippets > div > pre {
+  color: #fff;
+}
+
+.codeSnippets input,
+.codeSnippets textarea,
+.codeSnippets [contenteditable] {
+  caret-color: #fff;
+}
+
+.codeSnippets .npm__react-simple-code-editor__textarea {
+  outline: 0;
+}
+
+.codeSnippets .container__content {
+  width: 440px;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.codeSnippets .container_editor_area {
+  -moz-tab-size: 4ch;
+    -o-tab-size: 4ch;
+       tab-size: 4ch;
+  max-height: 400px;
+  overflow: auto;
+  margin: 1.67em 0;
+}
+
+.codeSnippets .container__editor {
+  font-size: 12px;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  background-color: #fafafa;
+  border-radius: 3px;
+}
+
+.codeSnippets .container__editor textarea {
+  outline: 0;
+}
+
+.codeSnippets .button {
+  display: inline-block;
+  padding: 0 6px;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+}
+
+.codeSnippets .button:hover {
+  background: linear-gradient(45deg, #e42b66, #e2433f);
+}
+
+.codeSnippets .token.cdata,
+.codeSnippets .token.comment,
+.codeSnippets .token.doctype,
+.codeSnippets .token.prolog {
+  color: #90a4ae;
+}
+
+.codeSnippets .token.punctuation {
+  color: #9e9e9e;
+}
+
+.codeSnippets .namespace {
+  opacity: 0.7;
+}
+
+.codeSnippets .token.boolean,
+.codeSnippets .token.constant,
+.codeSnippets .token.deleted,
+.codeSnippets .token.number,
+.codeSnippets .token.property,
+.codeSnippets .token.symbol,
+.codeSnippets .token.tag {
+  color: #e91e63;
+}
+
+.codeSnippets .token.attr-name,
+.codeSnippets .token.builtin,
+.codeSnippets .token.char,
+.codeSnippets .token.inserted,
+.codeSnippets .token.selector,
+.codeSnippets .token.string {
+  color: #4caf50;
+}
+
+.codeSnippets .language-css .token.string,
+.codeSnippets .style .token.string,
+.codeSnippets .token.entity,
+.codeSnippets .token.operator,
+.codeSnippets .token.url {
+  color: #795548;
+}
+
+.codeSnippets .token.atrule,
+.codeSnippets .token.attr-value,
+.codeSnippets .token.keyword {
+  color: #3f51b5;
+}
+
+.codeSnippets .token.function {
+  color: #f44336;
+}
+
+.codeSnippets .token.important,
+.codeSnippets .token.regex,
+.codeSnippets .token.variable {
+  color: #ff9800;
+}
+
+.codeSnippets .token.bold,
+.codeSnippets .token.important {
+  font-weight: 700;
+}
+
+.codeSnippets .token.italic {
+  font-style: italic;
+}
+
+.codeSnippets .token.entity {
+  cursor: help;
+}
+/*# sourceMappingURL=codeSnippets.css.map */

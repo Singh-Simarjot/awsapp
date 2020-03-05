@@ -1,0 +1,31 @@
+$color-black: #000;
+$color-white: #fff;
+$color-white-gray: #f4f4f4;
+$color-oranger: #ff6600;
+$color-blue: #0f62fe;
+$color-red: #f00;
+
+// font-size
+$drfault-size: 16px;
+
+// themesetting
+$theme-bg: $color-black;
+$theme-text: $color-white;
+// $theme-active-link: $color-oranger;
+$theme-active-link: $color-blue;
+$theme-bg-light: $color-white-gray;
+$theme-text-dark: $color-black;
+/*
+$theme-dark: true;
+$theme-light: false;
+@if $theme-dark {
+  $theme-bg: $color-black;
+  $theme-text: $color-white;
+  $theme-active-link: $color-oranger;
+}
+@if $theme-light {
+  $theme-bg: $color-white;
+  $theme-text: $color-black;
+  $theme-active-link: $color-oranger;
+}
+*/
